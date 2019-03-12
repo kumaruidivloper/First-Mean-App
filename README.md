@@ -1,3 +1,10 @@
+# "start:server": "nodemon server.js"
+run Cmd: npm run start:server
+
+# Start UI Server
+run Cmd: ng serve
+
+
 # MeanCourse
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.0.1.
