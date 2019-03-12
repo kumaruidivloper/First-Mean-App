@@ -13,6 +13,8 @@ mongoose
     "mongodb+srv://max:" +
       process.env.MONGO_ATLAS_PW +
       "@cluster0-ntrwp.mongodb.net/node-angular"
+	  // "mongodb+srv://Test001:SqmcAZrgtOf3FtG4@kumar001-dv4pg.mongodb.net/node-angular?retryWrites=true"
+    // "mongodb+srv://Test002:OJmrw0WhWJe0McLD@kumar002-myr2k.mongodb.net/node-angular"
   )
   .then(() => {
     console.log("Connected to database!");
@@ -23,7 +25,7 @@ mongoose
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
-app.use("/images", express.static(path.join("backend/images")));
+app.use("/images", express.static(path.join("images")));
 
 app.use((req, res, next) => {
   res.setHeader("Access-Control-Allow-Origin", "*");
